@@ -1,8 +1,6 @@
 var myConnector = tableau.makeConnector();
 
-// -------------------------
 // SCHEMA
-// -------------------------
 myConnector.getSchema = function (schemaCallback) {
 
     var cols = [
@@ -21,9 +19,8 @@ myConnector.getSchema = function (schemaCallback) {
     }]);
 };
 
-// -------------------------
-// DATA
-// -------------------------
+
+// FETCH DATA
 myConnector.getData = function (table, doneCallback) {
 
     var url =
@@ -60,9 +57,8 @@ myConnector.getData = function (table, doneCallback) {
 
 tableau.registerConnector(myConnector);
 
-// -------------------------
-// BUTTON CLICK (FIXED)
-// -------------------------
+
+// BUTTON CLICK
 document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("getData").addEventListener("click", function () {
