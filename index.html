@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>USGS Earthquake WDC</title>
+  <title>USGS Earthquake Viewer</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tableau WDC library -->
   <script src="https://connectors.tableau.com/libs/tableauwdc-2.3.latest.js"></script>
-  <script src="wdc.js"></script>
 </head>
 
 <body>
-  <h2>USGS Earthquake Data</h2>
+
+  <h2>Earthquake Data Preview</h2>
+
   <button id="getData">Get Earthquake Data</button>
+
+  <h3>Preview Output</h3>
+  <pre id="output">Click button to load data...</pre>
+
+  <!-- Your logic -->
+  <script src="app.js"></script>
+  <script src="wdc.js"></script>
+
 </body>
 </html>
